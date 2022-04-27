@@ -1,0 +1,35 @@
+body{
+    background-color:darkgrey;
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+    background-image: linear-gradient(rgba(72, 211, 153, 0.699), rgb(221, 113, 131));
+}
+
+img{
+    border-radius: 50%;
+}
+
+.fotolinkedin{
+    height: 35px;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fototb{ 
+    height: 300px;
+    margin-left: 0%;
+}
+
+.fotogithub{
+    height: 35px;
+}
+
+.fotointeli{
+    border-radius: 0%;
+    height: 150px;
+}
