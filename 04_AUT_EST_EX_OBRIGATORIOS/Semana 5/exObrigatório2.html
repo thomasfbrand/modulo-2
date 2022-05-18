@@ -10,7 +10,10 @@
 
 <body>
     <h1>Sacando dinheiro</h1>
+    
     <input id="calcular" type="number" placeholder="Sacar"> <button onclick="clicar()">calcular</button>
+
+
     <script>
         var nota100 = 0
         var nota50 = 0
@@ -46,10 +49,27 @@
                 nota2 = parseInt(total / 2);
                 total = total - (nota2 * 2)
             }
-            alert("Notas de 100: " + nota100 +", Notas de 50: " + nota50 + ", Notas de 20: " + nota20 + ", Notas de 10: " + nota10 + ", Notas de 5 é: " + nota5 + ", Notas de 2 é: " + nota2 + ", Notas de 1 é: " + total)
+
+            document.getElementById("notas100").innerHTML = "Notas 100: " + nota100
+            document.getElementById("notas50").innerHTML = "Notas 50: " + nota50
+            document.getElementById("notas20").innerHTML = "Notas 20: " + nota20
+            document.getElementById("notas10").innerHTML = "Notas 10: " + nota10
+            document.getElementById("notas5").innerHTML = "Notas 5: " + nota5
+            document.getElementById("notas2").innerHTML = "Notas 2: " + nota2
+            document.getElementById("notas1").innerHTML = "Notas 1: " + total
+
 
         }
     </script>
+
+        
+<p id="notas100"></p>
+<p id="notas50"></p>
+<p id="notas20"></p>
+<p id="notas10"></p>
+<p id="notas5"></p>
+<p id="notas2"></p>
+<p id="notas1"></p>
 </body>
 
 </html>
