@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 2 Semana 5</title>
+</head>
+
+<body>
+    <h1>Sacando dinheiro</h1>
+    <input id="calcular" type="number" placeholder="Sacar"> <button onclick="clicar()">calcular</button>
+    <script>
+        var nota100 = 0
+        var nota50 = 0
+        var nota20 = 0
+        var nota10 = 0
+        var nota5 = 0
+        var nota2 = 0
+        var nota1 = 0
+
+        function clicar() {
+            var total = document.getElementById("calcular").value;
+            if (total >= 100) {
+                nota100 = parseInt(total / 100);
+                total = total - (nota100 * 100)
+            }
+            if (total >= 50) {
+                nota50 = parseInt(total / 50);
+                total = total - (nota50 * 50)
+            }
+            if (total >= 20) {
+                nota20 = parseInt(total / 20);
+                total = total - (nota20 * 20)
+            }
+            if (total >= 10) {
+                nota10 = parseInt(total / 10);
+                total = total - (nota10 * 10)
+            }
+            if (total >= 5) {
+                nota5 = parseInt(total / 5);
+                total = total - (nota5 * 5)
+            }
+            if (total >= 2) {
+                nota2 = parseInt(total / 2);
+                total = total - (nota2 * 2)
+            }
+            alert("Notas de 100: " + nota100 +", Notas de 50: " + nota50 + ", Notas de 20: " + nota20 + ", Notas de 10: " + nota10 + ", Notas de 5 é: " + nota5 + ", Notas de 2 é: " + nota2 + ", Notas de 1 é: " + total)
+
+        }
+    </script>
+</body>
+
+</html>
