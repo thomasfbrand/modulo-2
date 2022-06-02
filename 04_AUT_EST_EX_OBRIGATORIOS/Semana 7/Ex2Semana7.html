@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 2</title>
+    <script>
+        function trocar(){
+            var texto1 = document.getElementById("primeiro").value;
+            var texto2 = document.getElementById("segundo").value;
+            document.getElementById("primeiro").value = texto2
+            document.getElementById("segundo").value = texto1
+
+        }
+
+    </script>
+</head>
+
+<body>
+    <h1>Exercício Troca</h1>
+    <input id="primeiro" type="text" placeholder="Texto 1">
+    <input id="segundo" type="text" placeholder="Texto 2">
+    <button onclick="trocar()">Troca</button>
+</body>
+</html>
