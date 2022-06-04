@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +8,43 @@
     <title>Ex 4</title>
 
     <script>
+        function calculo() {
+            let qtnPessoasInput = document.querySelector("#qtnPessoas");
+            let periodo = document.querySelector("#periodo");
 
-        
+
+            let qtnPessoas = Number(qtnPessoasInput.value)
+            let preco;
+
+            if (periodo.value == "1") {
+                preco = 200 * qtnPessoas;
+
+                if (qtnPessoas > 50) {
+                    preco = 120 * qtnPessoas;
+                }
+            } else {
+                preco = 100 * qtnPessoas;
+
+                if (qtnPessoas > 50) {
+                    preco = 80 * qtnPessoas;
+                }
+            }
+
+            alert(preco)
+        }
     </script>
 </head>
+
 <body>
-    
+    <h1>Voo aéreo</h1>
+    <label for="num">Quantidade de Pessoas</label>
+    <input type="number" name="Quantidade de Pessoas" id="qtnPessoas">
+    <label for="periodo">Periodo do voo</label>
+    <select name="" id="periodo">
+        <option value="1">Diurno</option>
+        <option value="2">Noturno</option>
+    </select>
+    <button onclick="calculo()">Calcular</button>
 </body>
+
 </html>

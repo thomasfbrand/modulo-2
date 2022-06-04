@@ -1,12 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <h1>Número de telefone</h1>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ex 3</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.1.62/jquery.inputmask.bundle.js"></script>
+    <input type='tel' style="padding: 10px;" id='phoneNumber' />
+
+    <script>
+        $(window).load(() => {
+            let phoneMask = { "mask": "(##) #####-####" };
+
+            $('#phoneNumber').inputmask({
+                mask: phoneMask,
+                definitions: { '#': { validator: "[0-9]", cardinality: 1 } }
+            });
+        });
+        alert(success)
+    </script>
+
 </head>
+
 <body>
-    
 </body>
+
 </html>
