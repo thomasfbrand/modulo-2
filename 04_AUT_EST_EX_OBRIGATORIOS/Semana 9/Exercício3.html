@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 3</title>
+</head>
+<body>
+    <h1>Nomes em ordem alfabética</h1>
+    <input type="text" placeholder="Nome, Nome, Nome" id="nome">
+    <button onclick="ordenar()">Ordenar</button>
+    <p id="ThomasEmIsrael"></p>
+
+    <script>
+        function ordenar(){
+            var nomes = document.getElementById("nome").value
+            var espaçar = nomes.split(",") 
+            var ordenacao = espaçar.sort()
+            document.getElementById("ThomasEmIsrael").innerHTML = ordenacao
+        }
+    </script>
+    
+</body>
+</html>
