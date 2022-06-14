@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 1</title>
+</head>
+<body>
+    <h1>Par ou ímpar?</h1>
+    <input type="number" placeholder="Número de 3 dígitos" id="numero" max="3" >
+    <button onclick="calcular()">Calcular</button>
+
+    <script>
+        function calcular(){
+            var numero = document.getElementById("numero").value
+            var divisao = numero.split("")
+            
+            if(divisao[0] % 2 == 0){
+                alert(divisao[0] + " é par!")
+            }
+            else{
+                alert(divisao[0] + " é impar!")
+            }
+        }
+    </script>
+    
+</body>
+</html>

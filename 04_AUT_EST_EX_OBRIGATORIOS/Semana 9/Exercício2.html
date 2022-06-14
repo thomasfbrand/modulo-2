@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 2</title>
+</head>
+
+<body>
+    <h1>Soma de algarismos</h1>
+    <input type="number" placeholder="Digite o número!" id="numero">
+    <button onclick="calcular()">Calcular</button>
+
+    <script>
+        function calcular() {
+
+            var numero = document.getElementById("numero").value
+            var algarismo = numero.split("")
+            let soma = 0
+            for (let i = 0; i < algarismo.length; i++) {
+                soma += parseInt(algarismo[i]);
+            }
+            alert("A soma dos algarismos é " + soma + "!")
+
+        }
+
+    </script>
+
+</body>
+
+</html>
