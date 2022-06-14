@@ -18,8 +18,8 @@
 
             var numero = document.getElementById("numero").value
             var algarismo = numero.split("")
-            let soma = 0
-            for (let i = 0; i < algarismo.length; i++) {
+            var soma = 0
+            for (var i = 0; i < algarismo.length; i++) {
                 soma += parseInt(algarismo[i]);
             }
             alert("A soma dos algarismos é " + soma + "!")
