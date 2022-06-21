@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function calcular() {
+    document.getElementById("resultado").innerHTML = ""  
+
+    let a = document.getElementById('num1').value; 
+    let b = document.getElementById('num2').value; 
+
+for(let i = a; i<=b; i++){  
+
+    let primo = 0; 
+    for (let x = 2; x < i; x++) { 
+      if(i % x == 0){ 
+        primo++;
+      }
+    }
+
+    if(primo==0){
+        document.getElementById('resultado').innerHTML += i + "<br>"
+    }
+}
+
+}
+    </script>
+</head>
+<body>
+    <h1>Intervalo de primos</h1>
+    <input type="number" placeholder="Numero 1" id="num1">
+    <input type="number" placeholder="Numero 2" id="num2">
+    <button type="button" onclick="calcular()">Calcular</button>
+</body>
+</html>
